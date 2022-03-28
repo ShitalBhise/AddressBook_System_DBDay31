@@ -151,16 +151,4 @@ mysql> select city,count(firstname) from AddressBook group by city;
 4 rows in set (0.02 sec)
 
 mysql>
-mysql> select firstname,city from AddressBook order by city;
-+-----------+----------+
-| firstname | city     |
-+-----------+----------+
-| Shish     | Benglore |
-| Shital    | Digras   |
-| Vaishnavi | jaipur   |
-| Anjali    | nagpur   |
-+-----------+----------+
-4 rows in set (0.03 sec)
-
-mysql>
 
