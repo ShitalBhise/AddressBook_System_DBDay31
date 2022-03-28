@@ -121,13 +121,3 @@ mysql> select * from AddressBook;
 4 rows in set (0.00 sec)
 
 mysql>
-mysql> select * from AddressBook where city='Digras' or state='Kernataka';
-+-----------+----------+----------+----------+-------------+--------+-------------+-------------------+
-| firstname | lastname | address  | city     | state       | zip    | phonenumber | email             |
-+-----------+----------+----------+----------+-------------+--------+-------------+-------------------+
-| Shital    | pachpor  | Shivaji  | Digras   | Maharashtra | 445203 |    98342789 | Shivaji@gmail.com |
-| Shish     | Pachpor  | sainagar | Benglore | Kernataka   | 445678 |    87654567 | Pachpor@gmail.com |
-+-----------+----------+----------+----------+-------------+--------+-------------+-------------------+
-2 rows in set (0.00 sec)
-
-mysql>
