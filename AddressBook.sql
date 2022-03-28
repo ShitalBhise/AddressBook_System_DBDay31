@@ -131,3 +131,24 @@ mysql> select * from AddressBook where city='Digras' or state='Kernataka';
 2 rows in set (0.00 sec)
 
 mysql>
+mysql> select count(firstname) from AddressBook where city='jaipur';
++------------------+
+| count(firstname) |
++------------------+
+|                1 |
++------------------+
+1 row in set (0.05 sec)
+
+mysql> select city,count(firstname) from AddressBook group by city;
++----------+------------------+
+| city     | count(firstname) |
++----------+------------------+
+| Digras   |                1 |
+| nagpur   |                1 |
+| jaipur   |                1 |
+| Benglore |                1 |
++----------+------------------+
+4 rows in set (0.02 sec)
+
+mysql>
+
