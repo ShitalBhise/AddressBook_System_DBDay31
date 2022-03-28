@@ -106,3 +106,18 @@ mysql> select * from AddressBook;
 5 rows in set (0.00 sec)
 
 mysql>
+mysql> delete from AddressBook where lastname='shivaji';
+Query OK, 1 row affected (0.20 sec)
+
+mysql> select * from AddressBook;
++-----------+----------+-------------+----------+-------------+--------+-------------+---------------------+
+| firstname | lastname | address     | city     | state       | zip    | phonenumber | email               |
++-----------+----------+-------------+----------+-------------+--------+-------------+---------------------+
+| Shital    | pachpor  | Shivaji     | Digras   | Maharashtra | 445203 |    98342789 | Shivaji@gmail.com   |
+| Anjali    | bhide    | AmbikaNagar | nagpur   | Gujrat      | 789450 |    12345678 | Anjali@gmail.com    |
+| Vaishnavi | bhosle   | bapunagar   | jaipur   | Rajastan    | 654321 |    98765432 | Vaishnavi@gmail.com |
+| Shish     | Pachpor  | sainagar    | Benglore | Kernataka   | 445678 |    87654567 | Pachpor@gmail.com   |
++-----------+----------+-------------+----------+-------------+--------+-------------+---------------------+
+4 rows in set (0.00 sec)
+
+mysql>
