@@ -54,3 +54,38 @@ mysql> desc AddressBook
 8 rows in set (0.13 sec)
 
 mysql> 
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Shital','Bhise','Shivaji','Digras','Maharashtra',445203,468239279359,'Shivaji@gmail.com');
+ERROR 1264 (22003): Out of range value for column 'phonenumber' at row 1
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Shital','Bhise','Shivaji','Digras','Maharashtra',445203,4634784590,'Shivaji@gmail.com');
+ERROR 1264 (22003): Out of range value for column 'phonenumber' at row 1
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Shital','Bhise','Shivaji','Digras','Maharashtra',445203,9834278900,'Shivaji@gmail.com');
+ERROR 1264 (22003): Out of range value for column 'phonenumber' at row 1
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Shital','Bhise','Shivaji','Digras','Maharashtra',445203,98342789,'Shivaji@gmail.com');
+Query OK, 1 row affected (0.13 sec)
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Shree','shivaji','Shivajishree','Dig','Maharashtra',446703,99347610,'Shree@gmail.com');
+Query OK, 1 row affected (0.12 sec)
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Anjali','bhide','AmbikaNagar','nagpur','Gujrat',789450,12345678,'Anjali@gmail.com');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Vaishnavi','bhosle','bapunagar','jaipur','Rajastan',654321,98765432,'Vaishnavi@gmail.com');
+Query OK, 1 row affected (0.16 sec)
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('Shish','Pachpor','sainagar','Benglore','Kernataka',445678,87654567,'Pachpor@gmail.com');
+Query OK, 1 row affected (0.10 sec)
+
+mysql> select * from AddressBook
+    -> ;
++-----------+----------+--------------+----------+-------------+--------+-------------+---------------------+
+| firstname | lastname | address      | city     | state       | zip    | phonenumber | email               |
++-----------+----------+--------------+----------+-------------+--------+-------------+---------------------+
+| Shital    | Bhise    | Shivaji      | Digras   | Maharashtra | 445203 |    98342789 | Shivaji@gmail.com   |
+| Shree     | shivaji  | Shivajishree | Dig      | Maharashtra | 446703 |    99347610 | Shree@gmail.com     |
+| Anjali    | bhide    | AmbikaNagar  | nagpur   | Gujrat      | 789450 |    12345678 | Anjali@gmail.com    |
+| Vaishnavi | bhosle   | bapunagar    | jaipur   | Rajastan    | 654321 |    98765432 | Vaishnavi@gmail.com |
+| Shish     | Pachpor  | sainagar     | Benglore | Kernataka   | 445678 |    87654567 | Pachpor@gmail.com   |
++-----------+----------+--------------+----------+-------------+--------+-------------+---------------------+
+5 rows in set (0.03 sec)
+
+mysql>
