@@ -149,5 +149,6 @@ mysql> select city,count(firstname) from AddressBook group by city;
 | Benglore |                1 |
 +----------+------------------+
 4 rows in set (0.02 sec)
+
 mysql>
 
